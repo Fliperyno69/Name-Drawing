@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Names Drawing</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+<div class="background">
+
+<div class="container">
+    <h1>Names Drawing</h1>
+
+    <form id="nameForm">
+        <label for="nameInput">Name:</label>
+        <input type="text" id="nameInput" required>
+        <button style="--clr:#39FF14" class="btn_pridat" type="button" onclick="addName()"><span>Add</span><i></i></button>
+    </form>
+
+    <table id="nameTable">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Number of wins</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <button class="drawButton" onclick="drawWinner()">Draw</button>
+</div>
+</div>
+
+</body>
+</html>
